@@ -64,13 +64,21 @@ h2 {
 .header {
   display: flex;
   gap: 4em;
-  margin-top: 2em;
+  padding: 2em 0;
+  border-bottom: 4px solid black;
 }
 
 .header img {
   width: 50%;
   object-fit: cover;
   border-radius: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin: 2em 0;
 }
 
 .grid {
