@@ -80,14 +80,12 @@ ol li {
 }
 
 .header {
-  display: flex;
-  gap: 2em;
   border-bottom: 4px solid black;
-  max-height: 300px;
-  padding: 2em 0;
+  padding-bottom: 2em;
 }
 
 .header img {
+  background-color: rgb(208, 208, 208);
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -99,4 +97,20 @@ ol li {
   grid-template-columns: 200px 1fr;
   gap: 2em;
   margin: 2em 0;
+}
+
+.content-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.content-body img {
+  padding: 0.5em;
+}
+
+.img-1x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
 }
