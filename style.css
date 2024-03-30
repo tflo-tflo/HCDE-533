@@ -45,6 +45,10 @@ svg {
   max-width: 100%;
 }
 
+img {
+  background-color: rgb(226, 231, 232);
+}
+
 body {
   font-family: "IBM Plex Mono", sans-serif;
   line-height: 1.5;
@@ -71,7 +75,7 @@ a, a:visited, a:hover {
   color: black;
 }
 
-a:hover {
+a:hover, a>img:hover {
   background-color: yellow;
 }
 
@@ -85,7 +89,6 @@ ol li {
 }
 
 .header img {
-  background-color: rgb(208, 208, 208);
   width: 200px;
   height: 200px;
   object-fit: cover;
