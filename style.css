@@ -36,6 +36,10 @@
   margin: 0;
 }
 
+.spacer-sm {
+  margin-bottom: 0.5em;
+}
+
 img,
 picture,
 video,
