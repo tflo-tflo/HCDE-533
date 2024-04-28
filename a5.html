@@ -38,7 +38,8 @@
           <ul>
             <li>Original hand file: <a href="https://www.thingiverse.com/thing:1680395">Thingiverse by Teak</a></li>
             <li>Original horse file: <a href="https://www.thingiverse.com/thing:2696963">Thingiverse by amandazirzow</a></li>
-            <li><a href="assets/A5-mesh.3dm">Combined meshes (Rhino)</a></li>
+            <li><a href="assets/A5-mesh.3dm">Combined meshes (.3dm)</a></li>
+            <li><a href="assets/A5-mesh.stl">Combined meshes (.stl)</a></li>
           </ul>
       </div>
     </div>
@@ -86,12 +87,28 @@
       </div>
       <div class="content-body">
         <p>
+          The two separate meshes: a horse and a hand.
         </p>
-        <a href=""><img src="" alt=""></a>
+        <a href="assets/2024-04-28--A5-meshes-original.png"><img src="assets/2024-04-28--A5-meshes-original.png" alt=""></a>
+        <ol>
+          <li>Slice the horse using a Vertical Plane and Rotate the plane so that it would protude slightly upwards (use the front view and Rotate, *not* Rotate 3D)</li>
+          <li>Scale both meshes so the horse's head is roughly half the size of the palm</li>
+          <li>Rotate the horse so it's facing the same direction as the open palm</li>
+          <li>MeshBooleanUnion</li>
+          <li>ReduceMesh by 90%</li>
+          <li>Turn on "Flat Shading" in the Display setting for the Shaded display mode, in Perspective</li>
+          <li>MeshRepair - I initially had a bad mesh, repaired it, then was left with unused vertices</li>
+          <li>RebuildMesh - This resolved the unused vertices</li>
+        </ol>
         <div class="img-1x2">
-          <a href=""><img src="" alt=""></a>
-          <a href=""><img src="" alt=""></a>
+          <a href="assets/2024-04-28--A5-meshes-repair.png"><img src="assets/2024-04-28--A5-meshes-repair.png" alt=""></a>
+          <a href="assets/2024-04-28--A5-meshes-rebuild.png"><img src="assets/2024-04-28--A5-meshes-rebuild.png" alt=""></a>
         </div>
+        <div class="img-1x2">
+          <a href="assets/2024-04-28--A5-meshes-points.png"><img src="assets/2024-04-28--A5-meshes-points.png" alt=""></a>
+          <a href="assets/2024-04-28--A5-meshes-STL.png"><img src="assets/2024-04-28--A5-meshes-STL.png" alt=""></a>
+        </div>
+        <a href="assets/2024-04-28--A5-meshes-model.png"><img src="assets/2024-04-28--A5-meshes-model.png" alt=""></a>
       </div>
       <div>
         <h2>Template</h2>
