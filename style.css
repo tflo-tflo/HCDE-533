@@ -83,7 +83,7 @@ a:hover, a>img:hover {
   background-color: yellow;
 }
 
-ol li {
+ol li, ul li {
   margin-bottom: 1em;
 }
 
